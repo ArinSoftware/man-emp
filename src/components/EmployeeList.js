@@ -1,5 +1,5 @@
 import { Modal, Button } from 'react-bootstrap';
-import {useContext, useState } from 'react';
+import {useContext, useEffect, useState } from 'react';
 import {EmployeeContext} from '../contexts/EmployeeContext';
 import Employee from './Employee';
 import AddForm from './AddForm';
@@ -12,6 +12,11 @@ const EmployeeList = () => {
     
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
+
+    useEffect(() => {
+        handleClose()
+    }, [employees])
+
 
     return (
     <>
