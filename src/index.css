@@ -4,6 +4,10 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 13px;
 }
+
+.btn-act {
+	padding: 4px;
+}
 .table-responsive {
     margin: 30px 0;
 }
@@ -57,7 +61,7 @@ table.table tr th, table.table tr td {
 }
 
 table.table tr th:last-child {
-	width: 100px;
+	width: 150px;
 }
 table.table-striped tbody tr:nth-of-type(odd) {
 	background-color: #fcfcfc;
